@@ -1,0 +1,38 @@
+
+do
+  hush
+  -- set to 100bpm
+  setcps(100/120)
+  --
+  -- kick drum
+  d5 $ struct "11" $ sound "bd"
+  --
+  -- synth lead
+  d1
+    $ whenmod 4 2 (# gain 0)
+    $ slow 2
+    $ struct "[1<0 1>11 0101 1010 1000]"
+    $ midinote "60"
+    + up "[[2] -2 0] [5 0] [2 -2] <0 -2>/2" # sound "superpwm"
+    # gain 0.9
+    # lpf 1900 # room 0.5 # size 0.8
+    # delayfb "0.7" # delayt "0.3" # delay "0.8"
+    # orbit 1
+  --
+  -- synth chords
+  d3
+    $ ("<0.25>" <~) $ slow 2 $ midinote "46" + up "<0 2 -3 -5>" # sound "supersaw"
+      # gain 0.9
+      # lpf 1400 # lpf 1400 # room 0.3 # size 0.8
+      # orbit 2 # lfo 0
+  d4
+      $ ("<0.25>" <~) $ slow 2 $ midinote "58" + up "<[2,7] [0,[4 5]] [0,4] [-1,[4 2]]>" # sound "supersaw" # lpf 1400 # room 0.3 # size 0.8
+      # gain 0.8
+      # orbit 2
+      # lfo 0
+  --
+  --
+  -- drums with movement
+  d5 $ struct "<1 1*2> 0" $ sound "bd"
+  d7 $ slow 1 $ struct "0 <1 1 [1001] 1 1 1 [1001] [1011]>" $ sound "sd"
+  d6 $ struct "0101" $ sound "hh"
