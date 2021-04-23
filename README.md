@@ -1,13 +1,11 @@
 
 # Theme music for ReadMe podcast
 
-Livecoding demo:
+Source code for the music created for the ReadMe podcast.
 
+You can listen to the final intro music on [SoundCloud](https://soundcloud.com/danqg/github-readme-podcast-theme-music-final-draft-1/s-3ieKbF8BDw7).
 
-
-[![Livecoding demo](./recording/demo_screenshot.png)](./recording/github_readme_tidalcycles-demo.mp4)
-
-Source code for the music created for the ReadMe podcast. You can listen to the final intro music on [SoundCloud](https://soundcloud.com/danqg/github-readme-podcast-theme-music-final-draft-1/s-3ieKbF8BDw7).
+See the live coding jam using this code: [YouTube link](https://www.youtube.com/watch?v=clvzxUUxduQ)
 
 
 All of the music is composed using [TidalCycles](https://tidalcycles.org/index.php/Welcome), and you can get it running on your computer.
