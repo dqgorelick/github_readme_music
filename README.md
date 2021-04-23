@@ -3,7 +3,9 @@
 
 Livecoding demo:
 
-[![Livecoding demo](./demo_screenshot.png)](https://www.youtube.com/watch?v=clvzxUUxduQ)
+
+
+[![Livecoding demo](./recording/demo_screenshot.png)](./recording/github_readme_tidalcycles-demo.mp4)
 
 Source code for the music created for the ReadMe podcast. You can listen to the final intro music on [SoundCloud](https://soundcloud.com/danqg/github-readme-podcast-theme-music-final-draft-1/s-3ieKbF8BDw7).
 
